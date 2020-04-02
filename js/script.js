@@ -4,15 +4,11 @@ $(document).ready(function(){
         btnClose = $('.close'),
         btnSelect = $('.main_btna'), 
         btnAdvice = $('.main_btn'), 
-        btnTimetable = $('#sheldure'); 
+        btnTimetable = $('nav ul li:eq(1)'); 
  
     function openModal(){
         
-        overlay.fadeTo(500, 0.7, function() {
-            overlay.css({
-                display:'block'
-            });
-        });
+        overlay.fadeTo(500, 0.7);
         
         modal.slideDown(500);
     }
